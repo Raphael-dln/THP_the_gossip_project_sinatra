@@ -26,17 +26,20 @@ class Gossip
     return all_gossips
   end
 
+  # Affiche les gossip un par un
   def self.find(id)
-    # Get gossips list
     all_gossips = self.all
     n = id.to_i
     n = n - 1
-   # all_gossips.index(n)
     puts all_gossips[n].author
     puts all_gossips[n].content
     return all_gossips[n]
-
   end
 
-
-end
+  def self.edit(id, content)
+    Gossip.find(params['id'])
+    puts id
+  end
+end # class
+#
+#

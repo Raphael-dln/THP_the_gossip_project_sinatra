@@ -8,7 +8,7 @@
           Son auteur : <%= gossip.author %><br/> 
           Le contenu du potin :" <%= gossip.content %>"
         </p>
-    <a href="/gossips/<%= gossips.index(gossip) + 1 %>/edit">Editer le potin</a>    
+    <a href="/gossips/<%= params['id'] %>/edit/">Editer le potin</a><br/>   
     <a href="/">Lien pour revenir à la page des potins</a>
   </body>
 </html>

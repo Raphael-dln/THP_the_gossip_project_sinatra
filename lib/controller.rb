@@ -23,4 +23,16 @@ class ApplicationController < Sinatra::Base
     number = params['id']
     erb :show, locals: {gossip: Gossip.find(number)}
   end
+
+  # Editer un potin !
+  get '/gossips/:id/edit/' do
+    number = params['id']
+    erb :edit , locals: {gossip: Gossip.edit(number)}
+  end
+
+  post '/gossips/:id/edit/' do
+    Gossip.edit(params['id'], params['gossip_content'])
+    redirect '/'
+  end
+
 end
