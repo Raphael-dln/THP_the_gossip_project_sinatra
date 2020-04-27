@@ -36,10 +36,17 @@ class Gossip
     return all_gossips[n]
   end
 
-  def self.edit(id, content)
-    Gossip.find(params['id'])
-    puts id
+  def self.edit(id, content_update)
+    n = id.to_i - 1
+    gossips = self.all
+    CSV.open("./db/gossip.csv", "w") do |csv|
+      gossips.each.with_index do |x| 
+        if n == gossips.index(x)
+          csv << [x.author, content_update]
+        else
+          csv << [x.author, x.content]
+        end
+      end
+    end
   end
 end # class
-#
-#

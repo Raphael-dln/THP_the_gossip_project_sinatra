@@ -20,11 +20,11 @@ Ensuite, vous lancez la fonction suivante :
 2.4. Ajouter un Gossip à partir du front <br/>
 2.5. Afficher l'index des gossips <br/>
 2.6. La vue show d'un potin <br/>
+2.7. Éditer un potin <br/>
 
 
 # Les étapes non réalisées :
 
-2.7. Éditer un potin <br/>
 2.8. Commenter un potin <br/>
 
 # Les gems requises (cf. Gemfile)
