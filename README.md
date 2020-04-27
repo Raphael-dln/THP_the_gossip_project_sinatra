@@ -7,10 +7,10 @@ Pour lancer l'application, vous pouvez utiliser :
 - $ shotgun -p 4567 (si gemme shotgun installée)
 
 Si jamais vous avez un message d'erreur qui mentionne qu'un utilisateur est déjà sur ce local host, vous pouvez utiliser la fonction suivante pour connaître le PIB de l'utilisateur : 
-- <strong>lsof -wni tcp:4567</strong>
+- <strong>$ lsof -wni tcp:4567</strong>
 
 Ensuite, vous lancez la fonction suivante :
-- <strong>kill -9 [PIB]</strong>
+- <strong>$ kill -9 [PIB]</strong>
 
 # Ce qui a été réalisé dans le projet du jour :
 
