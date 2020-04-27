@@ -1,7 +1,7 @@
 # THP_the_gossip_project_sinatra
 The Hacking Project - The gossip project - Sinatra
 
-Objectif : Créer une application The Gossip Project avec Sinatra
+Objectif : Créer une application The Gossip Project avec Sinatra <br />
 Pour lancer l'application, vous pouvez utiliser : 
 - <strong>$ rackup -p 4567</strong>
 - $ shotgun -p 4567 (si gemme shotgun installée)
