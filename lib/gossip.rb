@@ -15,6 +15,14 @@ class Gossip
     end
   end
 
+  def self.all
+    all_gossips = []
+    CSV.read("./db/gossip.csv").each do |csv|
+      gossip = 
+
+    return all_gossips
+  end
+
 
 
 end
